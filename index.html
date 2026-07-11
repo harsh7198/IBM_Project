@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Harsh Suradkar - Computer Science Engineering Student | Aspiring AI & Machine Learning Engineer. Portfolio showcasing projects, skills, and achievements." />
+  <meta name="keywords" content="Harsh Suradkar, portfolio, AI, Machine Learning, Computer Science, software development" />
+  <meta name="author" content="Harsh Suradkar" />
+  <title>Harsh Suradkar | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loader">
+    <div class="loader-content">
+      <div class="loader-ring"></div>
+      <p class="loader-text">Loading<span class="dots">...</span></p>
+    </div>
+  </div>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">HS<span class="accent">.</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certifications" class="nav-link">Certs</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+      <div class="hero-orb orb1"></div>
+      <div class="hero-orb orb2"></div>
+      <div class="hero-orb orb3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-text" data-aos="fade-right">
+        <p class="hero-greeting"><i class="fa-regular fa-hand-wave"></i> Hello, World!</p>
+        <h1 class="hero-title">Hi, I'm <span class="gradient-text">Harsh Suradkar</span></h1>
+        <div class="hero-role">
+          <span class="role-prefix">I'm a </span>
+          <span class="typed-text" id="typed"></span>
+          <span class="cursor">|</span>
+        </div>
+        <p class="hero-description">
+          I am a passionate Computer Science Engineering student with a strong interest in
+          Artificial Intelligence, Machine Learning, Data Science, and Software Development.
+          I enjoy solving real-world problems through technology, continuously learning new
+          skills, and building innovative projects.
+        </p>
+        <div class="hero-btns">
+          <a href="resume.pdf" download class="btn btn-primary"><i class="fa-solid fa-download"></i> Download Resume</a>
+          <a href="#contact" class="btn btn-outline"><i class="fa-solid fa-envelope"></i> Contact Me</a>
+        </div>
+        <div class="hero-socials">
+          <a href="#" aria-label="GitHub" class="social-icon"><i class="fa-brands fa-github"></i></a>
+          <a href="#" aria-label="LinkedIn" class="social-icon"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="mailto:harsh@example.com" aria-label="Email" class="social-icon"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="hero-illustration" data-aos="fade-left">
+        <div class="code-card glass-card">
+          <div class="code-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="code-filename">harsh.py</span>
+          </div>
+          <pre class="code-body"><code><span class="c-kw">class</span> <span class="c-cls">Developer</span>:
+  <span class="c-kw">def</span> <span class="c-fn">__init__</span>(<span class="c-pm">self</span>):
+    <span class="c-pm">self</span>.name   = <span class="c-str">"Harsh Suradkar"</span>
+    <span class="c-pm">self</span>.role   = <span class="c-str">"CSE Student"</span>
+    <span class="c-pm">self</span>.focus  = [<span class="c-str">"AI"</span>, <span class="c-str">"ML"</span>,
+                   <span class="c-str">"Data Science"</span>]
+    <span class="c-pm">self</span>.skills = <span class="c-pm">self</span>.<span class="c-fn">load_skills</span>()
+    <span class="c-pm">self</span>.coffee = <span class="c-num">float</span>(<span class="c-str">"inf"</span>) <span class="c-cm">☕</span>
+
+  <span class="c-kw">def</span> <span class="c-fn">solve</span>(<span class="c-pm">self</span>, problem):
+    <span class="c-kw">while</span> <span class="c-kw">not</span> problem.solved:
+      <span class="c-pm">self</span>.<span class="c-fn">think</span>()
+      <span class="c-pm">self</span>.<span class="c-fn">code</span>()
+      <span class="c-pm">self</span>.<span class="c-fn">learn</span>()</code></pre>
+        </div>
+        <div class="stat-chips">
+          <div class="chip glass-card"><i class="fa-solid fa-code"></i> 10+ Projects</div>
+          <div class="chip glass-card"><i class="fa-solid fa-star"></i> 5+ Certifications</div>
+          <div class="chip glass-card"><i class="fa-solid fa-brain"></i> AI Enthusiast</div>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="Scroll down"><i class="fa-solid fa-chevron-down"></i></a>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-tag">Get to know me</p>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-avatar-col" data-aos="fade-right">
+          <div class="avatar-wrapper glass-card">
+            <div class="avatar-initials">HS</div>
+            <div class="avatar-ring"></div>
+          </div>
+          <div class="about-quick-info">
+            <div class="info-item glass-card"><i class="fa-solid fa-graduation-cap"></i><span>CSE Student</span></div>
+            <div class="info-item glass-card"><i class="fa-solid fa-map-marker-alt"></i><span>India</span></div>
+            <div class="info-item glass-card"><i class="fa-solid fa-briefcase"></i><span>Open to Opportunities</span></div>
+          </div>
+        </div>
+        <div class="about-text-col" data-aos="fade-left">
+          <h3>Passionate about <span class="gradient-text">AI & Technology</span></h3>
+          <p>I am a dedicated Computer Science Engineering student with a deep passion for Artificial Intelligence and Machine Learning. My journey in tech is driven by curiosity and a relentless desire to build intelligent systems that solve real-world problems.</p>
+          <p>I have honed my skills across <strong>software development</strong>, <strong>data science</strong>, and <strong>algorithmic problem solving</strong>. I believe in the power of continuous learning and thrive in collaborative, fast-paced environments.</p>
+          <p>My ultimate career goal is to become a proficient <strong>AI & Machine Learning Engineer</strong>, contributing to transformative technologies that shape the future.</p>
+          <div class="about-traits">
+            <div class="trait-badge"><i class="fa-solid fa-robot"></i> AI & ML</div>
+            <div class="trait-badge"><i class="fa-solid fa-code"></i> Software Dev</div>
+            <div class="trait-badge"><i class="fa-solid fa-puzzle-piece"></i> Problem Solving</div>
+            <div class="trait-badge"><i class="fa-solid fa-book-open"></i> Continuous Learning</div>
+            <div class="trait-badge"><i class="fa-solid fa-users"></i> Teamwork</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="section section-alt">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-tag">Academic Background</p>
+        <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item" data-aos="fade-up">
+          <div class="timeline-dot"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="timeline-card glass-card">
+            <div class="tl-header">
+              <div>
+                <h3>Bachelor of Engineering</h3>
+                <h4>Computer Science Engineering</h4>
+              </div>
+              <span class="tl-badge pursuing">Currently Pursuing</span>
+            </div>
+            <div class="tl-details">
+              <div class="tl-detail"><i class="fa-solid fa-university"></i><span>[College Name]</span></div>
+              <div class="tl-detail"><i class="fa-solid fa-landmark"></i><span>[University Name]</span></div>
+              <div class="tl-detail"><i class="fa-solid fa-star"></i><span>CGPA: [X.XX / 10]</span></div>
+              <div class="tl-detail"><i class="fa-solid fa-calendar"></i><span>Expected: [YYYY]</span></div>
+            </div>
+            <div class="tl-subjects">
+              <span>AI & ML</span><span>Data Structures</span><span>DBMS</span><span>OS</span><span>OOP</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-tag">What I know</p>
+        <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-category glass-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="skill-cat-header"><i class="fa-solid fa-code"></i><h3>Programming</h3></div>
+          <div class="skill-tags">
+            <span class="skill-tag"><i class="fa-brands fa-python"></i> Python</span>
+            <span class="skill-tag">C</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag"><i class="fa-brands fa-java"></i> Java</span>
+            <span class="skill-tag"><i class="fa-solid fa-database"></i> SQL</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="skill-cat-header"><i class="fa-solid fa-globe"></i><h3>Web Development</h3></div>
+          <div class="skill-tags">
+            <span class="skill-tag"><i class="fa-brands fa-html5"></i> HTML</span>
+            <span class="skill-tag"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+            <span class="skill-tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="skill-cat-header"><i class="fa-solid fa-brain"></i><h3>AI & Data Science</h3></div>
+          <div class="skill-tags">
+            <span class="skill-tag">NumPy</span>
+            <span class="skill-tag">Pandas</span>
+            <span class="skill-tag">Machine Learning</span>
+            <span class="skill-tag">Data Analysis</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="skill-cat-header"><i class="fa-solid fa-tools"></i><h3>Tools & IDEs</h3></div>
+          <div class="skill-tags">
+            <span class="skill-tag"><i class="fa-brands fa-git-alt"></i> Git</span>
+            <span class="skill-tag"><i class="fa-brands fa-github"></i> GitHub</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Jupyter Notebook</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="skill-cat-header"><i class="fa-solid fa-book"></i><h3>Core Subjects</h3></div>
+          <div class="skill-tags">
+            <span class="skill-tag">DSA</span>
+            <span class="skill-tag">OOP</span>
+            <span class="skill-tag">DBMS</span>
+            <span class="skill-tag">Operating Systems</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-tag">What I've built</p>
+        <h2 class="section-title">My <span class="gradient-text">Projects</span></h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="project-img"><i class="fa-solid fa-robot"></i></div>
+          <div class="project-body">
+            <h3>[Project Title 1]</h3>
+            <p>[Brief description of your project — what problem it solves, what tech you used, and what impact it had.]</p>
+            <div class="project-tech"><span>Python</span><span>Machine Learning</span><span>Pandas</span></div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a href="#" class="btn btn-sm btn-primary"><i class="fa-solid fa-external-link-alt"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-img"><i class="fa-solid fa-chart-line"></i></div>
+          <div class="project-body">
+            <h3>[Project Title 2]</h3>
+            <p>[Brief description of your project — what problem it solves, what tech you used, and what impact it had.]</p>
+            <div class="project-tech"><span>Python</span><span>NumPy</span><span>Data Analysis</span></div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a href="#" class="btn btn-sm btn-primary"><i class="fa-solid fa-external-link-alt"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-img"><i class="fa-solid fa-globe"></i></div>
+          <div class="project-body">
+            <h3>[Project Title 3]</h3>
+            <p>[Brief description of your project — what problem it solves, what tech you used, and what impact it had.]</p>
+            <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a href="#" class="btn btn-sm btn-primary"><i class="fa-solid fa-external-link-alt"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="project-img"><i class="fa-solid fa-database"></i></div>
+          <div class="project-body">
+            <h3>[Project Title 4]</h3>
+            <p>[Brief description of your project — what problem it solves, what tech you used, and what impact it had.]</p>
+            <div class="project-tech"><span>SQL</span><span>Python</span><span>Java</span></div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a href="#" class="btn btn-sm btn-primary"><i class="fa-solid fa-external-link-alt"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-tag">Professional Development</p>
+        <h2 class="section-title">My <span class="gradient-text">Certifications</span></h2>
+      </div>
+      <div class="certs-grid">
+
+        <div class="cert-card glass-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
+          <div class="cert-body">
+            <h3>[Certification Title]</h3>
+            <p class="cert-issuer"><i class="fa-solid fa-building"></i> [Issuing Organization]</p>
+            <p class="cert-date"><i class="fa-solid fa-calendar-check"></i> [Month, Year]</p>
+            <a href="#" class="cert-verify">View Certificate <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="cert-card glass-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="cert-icon"><i class="fa-solid fa-brain"></i></div>
+          <div class="cert-body">
+            <h3>[Machine Learning Certification]</h3>
+            <p class="cert-issuer"><i class="fa-solid fa-building"></i> [Issuing Organization]</p>
+            <p class="cert-date"><i class="fa-solid fa-calendar-check"></i> [Month, Year]</p>
+            <a href="#" class="cert-verify">View Certificate <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="cert-card glass-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="cert-icon"><i class="fa-brands fa-python"></i></div>
+          <div class="cert-body">
+            <h3>[Python / Data Science Certification]</h3>
+            <p class="cert-issuer"><i class="fa-solid fa-building"></i> [Issuing Organization]</p>
+            <p class="cert-date"><i class="fa-solid fa-calendar-check"></i> [Month, Year]</p>
+            <a href="#" class="cert-verify">View Certificate <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="cert-card glass-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="cert-icon"><i class="fa-brands fa-github"></i></div>
+          <div class="cert-body">
+            <h3>[Web / Git Certification]</h3>
+            <p class="cert-issuer"><i class="fa-solid fa-building"></i> [Issuing Organization]</p>
+            <p class="cert-date"><i class="fa-solid fa-calendar-check"></i> [Month, Year]</p>
+            <a href="#" class="cert-verify">View Certificate <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="cert-card glass-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="cert-icon"><i class="fa-solid fa-code"></i></div>
+          <div class="cert-body">
+            <h3>[DSA / Programming Certification]</h3>
+            <p class="cert-issuer"><i class="fa-solid fa-building"></i> [Issuing Organization]</p>
+            <p class="cert-date"><i class="fa-solid fa-calendar-check"></i> [Month, Year]</p>
+            <a href="#" class="cert-verify">View Certificate <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements" class="section section-alt">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-tag">Milestones & Honours</p>
+        <h2 class="section-title">My <span class="gradient-text">Achievements</span></h2>
+      </div>
+      <div class="achievements-grid">
+
+        <div class="achievement-card glass-card" data-aos="zoom-in" data-aos-delay="0">
+          <div class="ach-icon"><i class="fa-solid fa-trophy"></i></div>
+          <h3>[Achievement Title]</h3>
+          <p>[Brief description of the achievement — event, result, or recognition received.]</p>
+          <span class="ach-date">[Year]</span>
+        </div>
+
+        <div class="achievement-card glass-card" data-aos="zoom-in" data-aos-delay="100">
+          <div class="ach-icon"><i class="fa-solid fa-medal"></i></div>
+          <h3>[Hackathon / Competition]</h3>
+          <p>[Brief description of the achievement — event, result, or recognition received.]</p>
+          <span class="ach-date">[Year]</span>
+        </div>
+
+        <div class="achievement-card glass-card" data-aos="zoom-in" data-aos-delay="200">
+          <div class="ach-icon"><i class="fa-solid fa-star"></i></div>
+          <h3>[Academic Excellence]</h3>
+          <p>[Brief description of the achievement — event, result, or recognition received.]</p>
+          <span class="ach-date">[Year]</span>
+        </div>
+
+        <div class="achievement-card glass-card" data-aos="zoom-in" data-aos-delay="300">
+          <div class="ach-icon"><i class="fa-solid fa-award"></i></div>
+          <h3>[Open Source / Other]</h3>
+          <p>[Brief description of the achievement — event, result, or recognition received.]</p>
+          <span class="ach-date">[Year]</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume -->
+  <section id="resume" class="section resume-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-tag">My Resume</p>
+        <h2 class="section-title">Download <span class="gradient-text">Resume</span></h2>
+      </div>
+      <div class="resume-content" data-aos="fade-up">
+        <div class="resume-card glass-card">
+          <div class="resume-icon"><i class="fa-solid fa-file-pdf"></i></div>
+          <div class="resume-info">
+            <h3>Harsh Suradkar — Resume</h3>
+            <p>Computer Science Engineering Student | AI & ML Enthusiast</p>
+            <p class="resume-meta"><i class="fa-solid fa-calendar"></i> Updated: 2025 &nbsp;|&nbsp; <i class="fa-solid fa-file"></i> PDF Format</p>
+          </div>
+          <a href="resume.pdf" download class="btn btn-primary btn-lg"><i class="fa-solid fa-download"></i> Download Resume</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-tag">Get in touch</p>
+        <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info" data-aos="fade-right">
+          <p class="contact-intro">I'm open to internship opportunities, collaborations, and interesting projects. Feel free to reach out!</p>
+          <div class="contact-items">
+            <a href="mailto:harsh@example.com" class="contact-item glass-card">
+              <i class="fa-solid fa-envelope"></i>
+              <div><span class="ci-label">Email</span><span class="ci-val">harsh@example.com</span></div>
+            </a>
+            <a href="tel:+910000000000" class="contact-item glass-card">
+              <i class="fa-solid fa-phone"></i>
+              <div><span class="ci-label">Phone</span><span class="ci-val">+91 00000 00000</span></div>
+            </a>
+            <a href="#" class="contact-item glass-card">
+              <i class="fa-brands fa-linkedin"></i>
+              <div><span class="ci-label">LinkedIn</span><span class="ci-val">linkedin.com/in/harshsuradkar</span></div>
+            </a>
+            <a href="#" class="contact-item glass-card">
+              <i class="fa-brands fa-github"></i>
+              <div><span class="ci-label">GitHub</span><span class="ci-val">github.com/harshsuradkar</span></div>
+            </a>
+            <div class="contact-item glass-card">
+              <i class="fa-solid fa-map-marker-alt"></i>
+              <div><span class="ci-label">Location</span><span class="ci-val">India</span></div>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form glass-card" id="contact-form" data-aos="fade-left" novalidate>
+          <h3>Send a Message</h3>
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+          <p class="form-note" id="form-msg"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <a href="#home" class="footer-logo">HS<span class="accent">.</span></a>
+        <nav class="footer-nav">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="footer-socials">
+          <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="mailto:harsh@example.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer-divider"></div>
+      <p class="footer-copy">© 2026 Harsh Suradkar. All Rights Reserved. Built with <i class="fa-solid fa-heart accent"></i> &amp; Code.</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button id="scroll-top" aria-label="Scroll to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+  <script src="script.js"></script>
+</body>
+</html>
